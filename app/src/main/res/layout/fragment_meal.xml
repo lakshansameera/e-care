@@ -1,0 +1,223 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Sameera.hearts.activity.fragments.AddElderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.Sameera.hearts.activity.fragments.AddElderFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- TODO: Update blank fragment layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/start_date"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_meal_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_textview"
+                        android:drawableRight="@drawable/ic_date_range_black_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_date"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/end_date"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_meal_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_textview"
+                        android:drawableRight="@drawable/ic_date_range_black_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_date"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:text="@string/meal_type"
+                            android:textSize="16dp" />
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1">
+
+
+                            <RadioButton
+                                android:id="@+id/rdoBreakfast"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/breakfast" />
+
+                            <RadioButton
+                                android:id="@+id/rdoLunch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lunch" />
+
+                            <RadioButton
+                                android:id="@+id/rdoDinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dinner" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/meal_description"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/edt_meal_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/rounded_textview"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:minLines="2"
+                        android:scrollbars="vertical" />
+
+                    <Button
+                        android:id="@+id/btn_add_meal_schedule"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/button_add_schedule"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/dark_white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Start Date"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="End Date"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Meal Type"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Description"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/dark_white" />
+
+                <ListView
+                    android:id="@+id/list_meal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></ListView>
+
+                <Button
+                    android:id="@+id/btn_meal_save"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/button_save"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</FrameLayout>
